@@ -15,6 +15,6 @@
 - [ ] Make Description Sections Look Nicer
 - [x] Add a ReadME File
 
-	![Album Cover for Project](./images/icon.png)
+	![Album Cover for Project](./images/album.png)
 [This is the Created Website](https://redmasque.netlify.app/)
 
