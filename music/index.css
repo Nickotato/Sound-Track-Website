@@ -94,7 +94,7 @@ body {
     height: 100%;
   }
   
-  .song--btn {
+  .song--head {
     outline: none;
     border: none;
     font-family: "Roboto", sans-serif;
@@ -102,8 +102,9 @@ body {
     font-weight: bold;
     font-size: 30px;
     background: none;
-    cursor: pointer;
+    cursor:crosshair;
     margin: 0;
+    border-bottom: 2px solid black;
   }
 
   @keyframes scroll-x {
@@ -195,4 +196,27 @@ body {
 
 .container:hover::before {
     background: gray;
+}
+
+div > p {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.section--button {
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid #ff7a7a;
+  display: inline-block;
+  margin: 20px 10px;
+  text-decoration: none;
+  background: #ff7a7a;
+  color: white;
+  cursor: pointer;
 }

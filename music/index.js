@@ -1,18 +1,24 @@
+let lastHeading = document.getElementById('headLast');
+let lastDesc = document.getElementById('descLast')
+let lastButton = document.getElementById('changeLast');
 
-      let song1 = document.getElementById("song1desc");
-      let m1b1 = document.getElementById("m1b1");
-      let m1b2 = document.getElementById("m1b2");
+let moodText = document.getElementById('moodText');
+let moodButton = document.getElementById('moodButton')
 
-      m1b1.style.borderBottom = "2px solid black";
+lastButton.addEventListener("click", () => {
+    if (lastHeading.textContent === text[1].name1) {
+        lastHeading.textContent = text[1].name2;
+        lastDesc.innerHTML = text[1].desc2;
+    } else {
+        lastHeading.textContent = text[1].name1;
+        lastDesc.innerHTML = text[1].desc1;
+    }
+})
 
-      m1b1.addEventListener("click", () => {
-        song1.textContent = text[0][0];
-        m1b1.style.borderBottom = "2px solid black";
-        m1b2.style.borderBottom = "none";
-      });
-
-      m1b2.addEventListener("click", () => {
-        song1.textContent = text[0][1];
-        m1b1.style.borderBottom = "none";
-        m1b2.style.borderBottom = "2px solid black";
-      });
+moodButton.addEventListener("click", () => {
+    if (moodText.textContent === text[0][0]) {
+        moodText.textContent = text[0][1];
+    } else {
+        moodText.textContent = text[0][0]
+    }
+})
