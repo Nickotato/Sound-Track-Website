@@ -151,3 +151,19 @@ figcaption > a {
     font-size: 7vw;
     margin-bottom: 20px;
 }
+
+.album {
+    width: 100vw;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.album--head {
+    margin-bottom: 30px;
+}
+
+.album--img {
+    width: 700px;
+    width: 700px;
+    border-radius: 15px;
+}
